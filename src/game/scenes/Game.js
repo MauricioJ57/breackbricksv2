@@ -19,24 +19,16 @@ export class Game extends Scene
 
         this.add.image(512, 400, 'rectangulo');
 
-        this.add.text(512, 384, 'Make something fun!\nand share it with us:\nsupport@phaser.io', {
-            fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
-            stroke: '#000000', strokeThickness: 8,
-            align: 'center'
-        }).setOrigin(0.5);
-
         this.input.once('pointerdown', () => {
 
             this.scene.start('GameOver');
 
         });
 
-        /*this.add.image(400, 300, "fondo");
-    
-        this.rectangulos = this.physics.add.image(400, 100, "rectangulo");
-        this.rectangulos.setImmovable(true);
+        /*this.rectangulos = this.physics.add.image(400, 100, 'rectangulo');
+        this.rectangulos.setImmovable(true);*/
 
-        this.plataforma = this.physics.add.image(400, 550, "plataforma");
+        /*this.plataforma = this.physics.add.image(400, 550, "plataforma");
         this.plataforma.setCollideWorldBounds(true);
         this.plataforma.setImmovable(true);
 
